@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DataBaseHandler: Класс MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DataBaseHandler<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Обработчик БД</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_main_window-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс MainWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс основного окна  
+ <a href="class_main_window.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#a_main_window_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#a_main_window_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:aad04302d313de607acdee0aa81cfae5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aad04302d313de607acdee0aa81cfae5e">set_data</a> (int i1, std::string r1, std::string t1)</td></tr>
+<tr class="memdesc:aad04302d313de607acdee0aa81cfae5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для редактирования значений в БД @detailed Проверяется, есть ли введённый индекс и точно ли выбрана строка, в таблицу qual_table и main_table через sql-запросы заносятся значения с модальной формы  <br /></td></tr>
+<tr class="separator:aad04302d313de607acdee0aa81cfae5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы с таблицей на форме и генерируется первичный ключ для р00.  <br /></td></tr>
+<tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор  <br /></td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671e7e5b0a3a7a3fb1cf44c5c8377952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a671e7e5b0a3a7a3fb1cf44c5c8377952">init</a> ()</td></tr>
+<tr class="memdesc:a671e7e5b0a3a7a3fb1cf44c5c8377952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод инициализации первичных значений @detailed Подключается драйвер для работы с PostgreSQL, настраиваются параметры для работы с конкретной БД, происходит подключение к БД и отображается текущая таблица на форме  <br /></td></tr>
+<tr class="separator:a671e7e5b0a3a7a3fb1cf44c5c8377952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab30d71c85511f7322e374ff38d6dfe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aab30d71c85511f7322e374ff38d6dfe8">checkQueryProblems</a> (QSqlQuery query)</td></tr>
+<tr class="memdesc:aab30d71c85511f7322e374ff38d6dfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод проверки проблем с запросом @detailed Проверка ошибок в запросе (в случае ошибки выведет окно с указанием проблемы)  <br /></td></tr>
+<tr class="separator:aab30d71c85511f7322e374ff38d6dfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8975686b04da2632c1df791b0f22632"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae8975686b04da2632c1df791b0f22632">checkRowIndexExistance</a> (int index)</td></tr>
+<tr class="memdesc:ae8975686b04da2632c1df791b0f22632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод проверки существования индекса @detailed Проверяется, есть ли введённый индекс  <br /></td></tr>
+<tr class="separator:ae8975686b04da2632c1df791b0f22632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5160bdb26d0a03f4280f09f665d63a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a5f5160bdb26d0a03f4280f09f665d63a">randomKeyGen</a> ()</td></tr>
+<tr class="memdesc:a5f5160bdb26d0a03f4280f09f665d63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод генерации ключей для столбца р00 @detailed Генерируется строка длиной 2 символа(т.к. p00 имеет тип varchar(2))  <br /></td></tr>
+<tr class="separator:a5f5160bdb26d0a03f4280f09f665d63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a955a4c52b5118cf1f40297461b0b31a9"><td class="memItemLeft" align="right" valign="top">QSqlDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a955a4c52b5118cf1f40297461b0b31a9">m_db</a></td></tr>
+<tr class="separator:a955a4c52b5118cf1f40297461b0b31a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс основного окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00022">22</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы с таблицей на форме и генерируется первичный ключ для р00. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Экземпляр класса QWidget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00004">4</a></p>
+
+</div>
+</div>
+<a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98d00a93bc118200eeef9f9bba1dba7">&#9670;&#160;</a></span>~MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aab30d71c85511f7322e374ff38d6dfe8" name="aab30d71c85511f7322e374ff38d6dfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab30d71c85511f7322e374ff38d6dfe8">&#9670;&#160;</a></span>checkQueryProblems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::checkQueryProblems </td>
+          <td>(</td>
+          <td class="paramtype">QSqlQuery&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод проверки проблем с запросом @detailed Проверка ошибок в запросе (в случае ошибки выведет окно с указанием проблемы) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Экземпляр класса QSqlQuery (sql-запрос, который отрабатывает) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00203">203</a></p>
+
+</div>
+</div>
+<a id="ae8975686b04da2632c1df791b0f22632" name="ae8975686b04da2632c1df791b0f22632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8975686b04da2632c1df791b0f22632">&#9670;&#160;</a></span>checkRowIndexExistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::checkRowIndexExistance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод проверки существования индекса @detailed Проверяется, есть ли введённый индекс </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Значение, которое пришло с формы модального окна </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true или false </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00253">253</a></p>
+
+</div>
+</div>
+<a id="a671e7e5b0a3a7a3fb1cf44c5c8377952" name="a671e7e5b0a3a7a3fb1cf44c5c8377952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671e7e5b0a3a7a3fb1cf44c5c8377952">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод инициализации первичных значений @detailed Подключается драйвер для работы с PostgreSQL, настраиваются параметры для работы с конкретной БД, происходит подключение к БД и отображается текущая таблица на форме </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a5f5160bdb26d0a03f4280f09f665d63a" name="a5f5160bdb26d0a03f4280f09f665d63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5160bdb26d0a03f4280f09f665d63a">&#9670;&#160;</a></span>randomKeyGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainWindow::randomKeyGen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод генерации ключей для столбца р00 @detailed Генерируется строка длиной 2 символа(т.к. p00 имеет тип varchar(2)) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00267">267</a></p>
+
+</div>
+</div>
+<a id="aad04302d313de607acdee0aa81cfae5e" name="aad04302d313de607acdee0aa81cfae5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad04302d313de607acdee0aa81cfae5e">&#9670;&#160;</a></span>set_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::set_data </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>t1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для редактирования значений в БД @detailed Проверяется, есть ли введённый индекс и точно ли выбрана строка, в таблицу qual_table и main_table через sql-запросы заносятся значения с модальной формы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i1</td><td>Значение, которое пришло с формы модального окна </td></tr>
+    <tr><td class="paramname">r1</td><td>Значение, которое пришло с формы модального окна (ввёл пользователь, либо по умолчанию то, что было в лайнэдите) </td></tr>
+    <tr><td class="paramname">t1</td><td>Значение, которое пришло с формы модального окна (ввёл пользователь, либо по умолчанию то, что было в лайнэдите) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00217">217</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a955a4c52b5118cf1f40297461b0b31a9" name="a955a4c52b5118cf1f40297461b0b31a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955a4c52b5118cf1f40297461b0b31a9">&#9670;&#160;</a></span>m_db</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlDatabase MainWindow::m_db</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00106">106</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li><a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DataBaseHandler: Класс Modal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DataBaseHandler<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Обработчик БД</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_modal-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Modal</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс модального окна  
+ <a href="class_modal.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="modal_8h_source.html">modal.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Modal:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_modal__inherit__graph.png" border="0" usemap="#a_modal_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Modal:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_modal__coll__graph.png" border="0" usemap="#a_modal_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:aeaf2fd62795275684f75eaa9551ff040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#aeaf2fd62795275684f75eaa9551ff040">onSendData</a> ()</td></tr>
+<tr class="memdesc:aeaf2fd62795275684f75eaa9551ff040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал считывания параметров i,r,t из лайнэдитов модального окна @detailed Считываются значения с формы и отправляется сигнал в главное окно  <br /></td></tr>
+<tr class="separator:aeaf2fd62795275684f75eaa9551ff040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:ad7f38a9c78fdbd370e99cb5e03120e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#ad7f38a9c78fdbd370e99cb5e03120e31">sendData</a> (int, std::string, std::string)</td></tr>
+<tr class="memdesc:ad7f38a9c78fdbd370e99cb5e03120e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал отправки значений параметров i,r,t в главное окно  <br /></td></tr>
+<tr class="separator:ad7f38a9c78fdbd370e99cb5e03120e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa462f9d0a555c85eb78d452f8f221f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#aa462f9d0a555c85eb78d452f8f221f3e">Modal</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa462f9d0a555c85eb78d452f8f221f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы формы модального окна: поведение кнопок Сохранить и Отмена и настройки лайнэдита индекса i таблицы main_table.  <br /></td></tr>
+<tr class="separator:aa462f9d0a555c85eb78d452f8f221f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2e7830211c07075078b5d5186dab54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#a4a2e7830211c07075078b5d5186dab54">~Modal</a> ()</td></tr>
+<tr class="separator:a4a2e7830211c07075078b5d5186dab54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f66ba370c38b065ae3f813c8fa1e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#a66f66ba370c38b065ae3f813c8fa1e7c">set_i_r_t_data</a> (const QString &amp;<a class="el" href="class_modal.html#ae28a53cb08a56adefc7a1e566a805ac9">i</a>, const QString &amp;<a class="el" href="class_modal.html#a788e9e52a1d69e909261a49072d90aa9">r</a>, const QString &amp;<a class="el" href="class_modal.html#aa7aa771be2e74fcce87a11d38d5819ee">t</a>)</td></tr>
+<tr class="memdesc:a66f66ba370c38b065ae3f813c8fa1e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод установки параметров i,r,t @detailed Устанавливаюся значения, которые пришли из главного окна, в лайнэдиты модального окна  <br /></td></tr>
+<tr class="separator:a66f66ba370c38b065ae3f813c8fa1e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ae28a53cb08a56adefc7a1e566a805ac9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#ae28a53cb08a56adefc7a1e566a805ac9">i</a></td></tr>
+<tr class="separator:ae28a53cb08a56adefc7a1e566a805ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788e9e52a1d69e909261a49072d90aa9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#a788e9e52a1d69e909261a49072d90aa9">r</a></td></tr>
+<tr class="separator:a788e9e52a1d69e909261a49072d90aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7aa771be2e74fcce87a11d38d5819ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_modal.html#aa7aa771be2e74fcce87a11d38d5819ee">t</a></td></tr>
+<tr class="separator:aa7aa771be2e74fcce87a11d38d5819ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс модального окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8h_source.html">modal.h</a> строка <a class="el" href="modal_8h_source.html#l00016">16</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa462f9d0a555c85eb78d452f8f221f3e" name="aa462f9d0a555c85eb78d452f8f221f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa462f9d0a555c85eb78d452f8f221f3e">&#9670;&#160;</a></span>Modal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Modal::Modal </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы формы модального окна: поведение кнопок Сохранить и Отмена и настройки лайнэдита индекса i таблицы main_table. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Экземпляр класса QWidget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8cpp_source.html">modal.cpp</a> строка <a class="el" href="modal_8cpp_source.html#l00004">4</a></p>
+
+</div>
+</div>
+<a id="a4a2e7830211c07075078b5d5186dab54" name="a4a2e7830211c07075078b5d5186dab54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2e7830211c07075078b5d5186dab54">&#9670;&#160;</a></span>~Modal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Modal::~Modal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8cpp_source.html">modal.cpp</a> строка <a class="el" href="modal_8cpp_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aeaf2fd62795275684f75eaa9551ff040" name="aeaf2fd62795275684f75eaa9551ff040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf2fd62795275684f75eaa9551ff040">&#9670;&#160;</a></span>onSendData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modal::onSendData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал считывания параметров i,r,t из лайнэдитов модального окна @detailed Считываются значения с формы и отправляется сигнал в главное окно </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Значение i </td></tr>
+    <tr><td class="paramname">r</td><td>Значение r </td></tr>
+    <tr><td class="paramname">t</td><td>Значение t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8cpp_source.html">modal.cpp</a> строка <a class="el" href="modal_8cpp_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a id="ad7f38a9c78fdbd370e99cb5e03120e31" name="ad7f38a9c78fdbd370e99cb5e03120e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f38a9c78fdbd370e99cb5e03120e31">&#9670;&#160;</a></span>sendData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modal::sendData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал отправки значений параметров i,r,t в главное окно </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Значение i </td></tr>
+    <tr><td class="paramname">r</td><td>Значение r </td></tr>
+    <tr><td class="paramname">t</td><td>Значение t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66f66ba370c38b065ae3f813c8fa1e7c" name="a66f66ba370c38b065ae3f813c8fa1e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f66ba370c38b065ae3f813c8fa1e7c">&#9670;&#160;</a></span>set_i_r_t_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modal::set_i_r_t_data </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод установки параметров i,r,t @detailed Устанавливаюся значения, которые пришли из главного окна, в лайнэдиты модального окна </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Значение i </td></tr>
+    <tr><td class="paramname">r</td><td>Значение r </td></tr>
+    <tr><td class="paramname">t</td><td>Значение t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8cpp_source.html">modal.cpp</a> строка <a class="el" href="modal_8cpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae28a53cb08a56adefc7a1e566a805ac9" name="ae28a53cb08a56adefc7a1e566a805ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28a53cb08a56adefc7a1e566a805ac9">&#9670;&#160;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Modal::i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8h_source.html">modal.h</a> строка <a class="el" href="modal_8h_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a788e9e52a1d69e909261a49072d90aa9" name="a788e9e52a1d69e909261a49072d90aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788e9e52a1d69e909261a49072d90aa9">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Modal::r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8h_source.html">modal.h</a> строка <a class="el" href="modal_8h_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="aa7aa771be2e74fcce87a11d38d5819ee" name="aa7aa771be2e74fcce87a11d38d5819ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7aa771be2e74fcce87a11d38d5819ee">&#9670;&#160;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Modal::t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="modal_8h_source.html">modal.h</a> строка <a class="el" href="modal_8h_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="modal_8h_source.html">modal.h</a></li>
+<li><a class="el" href="modal_8cpp_source.html">modal.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,201 @@
+\hypertarget{class_main_window}{}\doxysection{Класс Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Класс основного окна  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Граф наследования\+:Main\+Window\+:
+% FIG 0
+
+
+Граф связей класса Main\+Window\+:
+% FIG 1
+\doxysubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_aad04302d313de607acdee0aa81cfae5e}{set\+\_\+data}} (int i1, std\+::string r1, std\+::string t1)
+\begin{DoxyCompactList}\small\item\em Слот для редактирования значений в БД @detailed Проверяется, есть ли введённый индекс и точно ли выбрана строка, в таблицу qual\+\_\+table и main\+\_\+table через sql-\/запросы заносятся значения с модальной формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы с таблицей на форме и генерируется первичный ключ для р00. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a671e7e5b0a3a7a3fb1cf44c5c8377952}{init}} ()
+\begin{DoxyCompactList}\small\item\em Метод инициализации первичных значений @detailed Подключается драйвер для работы с Postgre\+SQL, настраиваются параметры для работы с конкретной БД, происходит подключение к БД и отображается текущая таблица на форме \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aab30d71c85511f7322e374ff38d6dfe8}{check\+Query\+Problems}} (QSql\+Query query)
+\begin{DoxyCompactList}\small\item\em Метод проверки проблем с запросом @detailed Проверка ошибок в запросе (в случае ошибки выведет окно с указанием проблемы) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_ae8975686b04da2632c1df791b0f22632}{check\+Row\+Index\+Existance}} (int index)
+\begin{DoxyCompactList}\small\item\em Метод проверки существования индекса @detailed Проверяется, есть ли введённый индекс \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_main_window_a5f5160bdb26d0a03f4280f09f665d63a}{random\+Key\+Gen}} ()
+\begin{DoxyCompactList}\small\item\em Метод генерации ключей для столбца р00 @detailed Генерируется строка длиной 2 символа(т.\+к. p00 имеет тип varchar(2)) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QSql\+Database \mbox{\hyperlink{class_main_window_a955a4c52b5118cf1f40297461b0b31a9}{m\+\_\+db}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс основного окна 
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8h_source}{mainwindow.\+h}} строка \mbox{\hyperlink{mainwindow_8h_source_l00022}{22}}
+
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Конструктор @detailed В конструкторе устанавливаются начальные настройки для работы с таблицей на форме и генерируется первичный ключ для р00. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & Экземпляр класса QWidget \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00004}{4}}
+
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор 
+
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00021}{21}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_main_window_aab30d71c85511f7322e374ff38d6dfe8}\label{class_main_window_aab30d71c85511f7322e374ff38d6dfe8}} 
+\index{MainWindow@{MainWindow}!checkQueryProblems@{checkQueryProblems}}
+\index{checkQueryProblems@{checkQueryProblems}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{checkQueryProblems()}{checkQueryProblems()}}
+{\footnotesize\ttfamily void Main\+Window\+::check\+Query\+Problems (\begin{DoxyParamCaption}\item[{QSql\+Query}]{query }\end{DoxyParamCaption})}
+
+
+
+Метод проверки проблем с запросом @detailed Проверка ошибок в запросе (в случае ошибки выведет окно с указанием проблемы) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Экземпляр класса QSql\+Query (sql-\/запрос, который отрабатывает) \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00203}{203}}
+
+\mbox{\Hypertarget{class_main_window_ae8975686b04da2632c1df791b0f22632}\label{class_main_window_ae8975686b04da2632c1df791b0f22632}} 
+\index{MainWindow@{MainWindow}!checkRowIndexExistance@{checkRowIndexExistance}}
+\index{checkRowIndexExistance@{checkRowIndexExistance}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{checkRowIndexExistance()}{checkRowIndexExistance()}}
+{\footnotesize\ttfamily bool Main\+Window\+::check\+Row\+Index\+Existance (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Метод проверки существования индекса @detailed Проверяется, есть ли введённый индекс 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em index} & Значение, которое пришло с формы модального окна \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true или false 
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00253}{253}}
+
+\mbox{\Hypertarget{class_main_window_a671e7e5b0a3a7a3fb1cf44c5c8377952}\label{class_main_window_a671e7e5b0a3a7a3fb1cf44c5c8377952}} 
+\index{MainWindow@{MainWindow}!init@{init}}
+\index{init@{init}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Main\+Window\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод инициализации первичных значений @detailed Подключается драйвер для работы с Postgre\+SQL, настраиваются параметры для работы с конкретной БД, происходит подключение к БД и отображается текущая таблица на форме 
+
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00029}{29}}
+
+\mbox{\Hypertarget{class_main_window_a5f5160bdb26d0a03f4280f09f665d63a}\label{class_main_window_a5f5160bdb26d0a03f4280f09f665d63a}} 
+\index{MainWindow@{MainWindow}!randomKeyGen@{randomKeyGen}}
+\index{randomKeyGen@{randomKeyGen}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{randomKeyGen()}{randomKeyGen()}}
+{\footnotesize\ttfamily std\+::string Main\+Window\+::random\+Key\+Gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод генерации ключей для столбца р00 @detailed Генерируется строка длиной 2 символа(т.\+к. p00 имеет тип varchar(2)) 
+
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00267}{267}}
+
+\mbox{\Hypertarget{class_main_window_aad04302d313de607acdee0aa81cfae5e}\label{class_main_window_aad04302d313de607acdee0aa81cfae5e}} 
+\index{MainWindow@{MainWindow}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{set\_data}{set\_data}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{i1,  }\item[{std\+::string}]{r1,  }\item[{std\+::string}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для редактирования значений в БД @detailed Проверяется, есть ли введённый индекс и точно ли выбрана строка, в таблицу qual\+\_\+table и main\+\_\+table через sql-\/запросы заносятся значения с модальной формы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em i1} & Значение, которое пришло с формы модального окна \\
+\hline
+{\em r1} & Значение, которое пришло с формы модального окна (ввёл пользователь, либо по умолчанию то, что было в лайнэдите) \\
+\hline
+{\em t1} & Значение, которое пришло с формы модального окна (ввёл пользователь, либо по умолчанию то, что было в лайнэдите) \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8cpp_source}{mainwindow.\+cpp}} строка \mbox{\hyperlink{mainwindow_8cpp_source_l00217}{217}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_main_window_a955a4c52b5118cf1f40297461b0b31a9}\label{class_main_window_a955a4c52b5118cf1f40297461b0b31a9}} 
+\index{MainWindow@{MainWindow}!m\_db@{m\_db}}
+\index{m\_db@{m\_db}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{m\_db}{m\_db}}
+{\footnotesize\ttfamily QSql\+Database Main\+Window\+::m\+\_\+db\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{mainwindow_8h_source}{mainwindow.\+h}} строка \mbox{\hyperlink{mainwindow_8h_source_l00106}{106}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}
