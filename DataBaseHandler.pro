@@ -24,11 +24,6 @@ FORMS += \
     mainwindow.ui \
     modal.ui
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
 OBJECTS_DIR = tmp
 RCC_DIR = $$OBJECTS_DIR
 MOC_DIR = $$OBJECTS_DIR

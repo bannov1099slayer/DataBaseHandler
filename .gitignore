@@ -11,3 +11,4 @@ tmp/
 debug/
 release/
 bin/
+.qtc_clangd/
