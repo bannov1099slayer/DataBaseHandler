@@ -12,3 +12,4 @@ debug/
 release/
 bin/
 .qtc_clangd/
+.qtc*/
