@@ -1,4 +1,9 @@
 # Простой обработчик базы данных
+
+![Qt Version](https://img.shields.io/badge/qt-5.15.2-blue)
+
+---
+
 Написать sql-скрипт, в котором создаются две связанные таблицы:
 + qual_table с полями p00 тип vatcher(2) и p01 тип text;
 + main_table с полями: i тип int4 первичный ключ, r тип varchar(2) ссылается на таблицу qual_table поле p00, t тип text.
