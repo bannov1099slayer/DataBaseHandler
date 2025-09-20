@@ -33,8 +33,8 @@ void MainWindow::init()
     m_db = QSqlDatabase::addDatabase("QPSQL");// подключаем драйвер для работы с PostgreSQL
     m_db.setHostName("localhost");
     m_db.setDatabaseName("mydb1");            // название БД, в которой хранятся наши таблицы
-    m_db.setUserName("postgres");
-    m_db.setPassword("leo12");
+    m_db.setUserName("BANNOV");
+    m_db.setPassword("1");
 
     if (!m_db.open())
     {

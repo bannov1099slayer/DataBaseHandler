@@ -5,7 +5,8 @@
 #include <QApplication>
 #include <QCloseEvent>
 #include <QValidator>
-#include <mainwindow.h>
+#include <QDebug>
+//#include <mainwindow.h>
 
 namespace Ui {
 class Modal;

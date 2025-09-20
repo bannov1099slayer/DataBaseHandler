@@ -1,3 +1,6 @@
+TEMPLATE = app
+TARGET = db_handler
+DESTDIR = bin
 QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -25,3 +28,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+OBJECTS_DIR = tmp
+RCC_DIR = $$OBJECTS_DIR
+MOC_DIR = $$OBJECTS_DIR
+UI_DIR  = $$OBJECTS_DIR
